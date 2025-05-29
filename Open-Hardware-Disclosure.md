@@ -130,10 +130,8 @@ We specifically invite:
 
 …to evaluate this design as a candidate for coordinated trials, standards inclusion, and policy alignment. The fragmented nature of PV integration requires public institutions to lead adoption.
 
-The author will assist with:
-	•	Supplier and assembly partner introductions
-	•	Application engineering and real-world data
-	•	Collaborative scale-up toward NREL’s 75 TWp net-zero solar targets
+
+Collaborative scale-up toward NREL’s 75 TWp net-zero solar targets
 
 10. Approximate size 
 Estimated: 35×45 mm PCB, <10 mm height, 2 oz copper, ~15 components, 40 A rated, single-sided SMD, no MCU, low-to-moderate complexity, SMT reflow compatible, fits standard Staubli/Amphenol J-boxes.
