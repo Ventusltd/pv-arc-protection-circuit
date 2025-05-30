@@ -162,6 +162,10 @@ It parallels the fault response used in lithium battery packs and aerospace elec
 
 This is a key step toward high-voltage, touch-safe DC systems for clean energy infrastructure. 
 
+13. Meaningful contributors
+
+Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer 
+
 Vikram Kumar
 Ventus Ltd
 United Kingdom
