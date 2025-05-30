@@ -164,7 +164,7 @@ This is a key step toward high-voltage, touch-safe DC systems for clean energy i
 
 13. Meaningful contributors
 
-Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer 
+Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge)
 
 Vikram Kumar
 Ventus Ltd
