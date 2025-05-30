@@ -135,6 +135,22 @@ Collaborative scale-up toward NREL’s 75 TWp net-zero solar targets
 
 10. Approximate size 
 Estimated: 35×45 mm PCB, <10 mm height, 2 oz copper, ~15 components, 40 A rated, single-sided SMD, no MCU, low-to-moderate complexity, SMT reflow compatible, fits standard Staubli/Amphenol J-boxes.
+
+11. Proof of concept from other industries
+
+This circuit senses DC arc risk, insulation leakage, or abnormal current using passive analog components. It reacts in microseconds without software. This type of sensing is already trusted in high-risk environments.
+
+In electric vehicles it senses overcurrent or thermal imbalance in battery strings. Fast MOSFET disconnect protects against thermal runaway.
+
+In satellites it senses voltage deviation or current ripple on DC buses. The analog design is used because it survives radiation and prevents electrical arcs in vacuum.
+
+In railway DC systems it senses conductor faults or water ingress. Analog isolation circuits open before arcs escalate into fires.
+
+In telecom base stations it senses insulation breakdown or line damage. Protection is autonomous because remote systems can’t wait for cloud logic.
+
+In photovoltaic systems this is the first use of fast analog arc sensing directly inside a junction box. By sensing ripple, leakage, or loss of current while sunlight is present, the system prevents fire, shock, or backfeed. The circuit is simple enough to manufacture at scale and rugged enough to deploy globally.
+
+This kind of sensing replaces expensive or complex solutions with something fail-safe, proven in harsher sectors, and now ready for solar.
 ⸻
 
 Vikram Kumar
