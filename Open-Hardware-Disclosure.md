@@ -151,6 +151,16 @@ In telecom base stations it senses insulation breakdown or line damage. Protecti
 In photovoltaic systems this is the first use of fast analog arc sensing directly inside a junction box. By sensing ripple, leakage, or loss of current while sunlight is present, the system prevents fire, shock, or backfeed. The circuit is simple enough to manufacture at scale and rugged enough to deploy globally.
 
 This kind of sensing replaces expensive or complex solutions with something fail-safe, proven in harsher sectors, and now ready for solar.
+
+12. Mission: Disconnection Under Load for Worker Safety
+
+This circuit enables local disconnection under load, even during active power generation, to protect field technicians and reduce electrocution risk during testing, commissioning, and fault handling of 1000–1500 VDC strings.
+
+Unlike traditional systems that rely on inverter shutdowns or manual string isolators, this approach provides autonomous, module-level fault isolation.
+
+It parallels the fault response used in lithium battery packs and aerospace electronics, where local protection circuits detect fault conditions and disconnect the cell or load path instantly. Applying the same philosophy to PV modules allows for safer, decentralized DC architectures at scale.
+
+This is a key step toward high-voltage, touch-safe DC systems for clean energy infrastructure.
 ⸻
 
 Vikram Kumar
