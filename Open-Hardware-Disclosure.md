@@ -160,8 +160,7 @@ Unlike traditional systems that rely on inverter shutdowns or manual string isol
 
 It parallels the fault response used in lithium battery packs and aerospace electronics, where local protection circuits detect fault conditions and disconnect the cell or load path instantly. Applying the same philosophy to PV modules allows for safer, decentralized DC architectures at scale.
 
-This is a key step toward high-voltage, touch-safe DC systems for clean energy infrastructure.
-⸻
+This is a key step toward high-voltage, touch-safe DC systems for clean energy infrastructure. 
 
 Vikram Kumar
 Ventus Ltd
