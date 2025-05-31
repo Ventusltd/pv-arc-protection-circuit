@@ -162,6 +162,32 @@ It parallels the fault response used in lithium battery packs and aerospace elec
 
 This is a key step toward high-voltage, touch-safe DC systems for clean energy infrastructure. 
 
+13. Module-Level Overload Protection (Transformer & Inverter Safety) - Intelligent DC and AC load flow studies possibilities
+
+### Overview
+This enhancement builds on the core arc suppression circuit by introducing a secondary function: **proactive disconnection during transformer or inverter overload conditions**. It uses the same high-speed MOSFETs already present for safety switching.
+
+### Problem
+In large-scale PV plants, sudden irradiance changes or low grid demand can lead to **thermal overload** of inverters and **magnetic saturation** of MV transformers. Traditional systems respond too late or rely on inverter logic that may already be compromised.
+
+### Solution
+This circuit allows for **autonomous, module-level output throttling or shutdown** in response to local or external signals indicating overproduction risk. The goal is not energy optimisation, but **grid-conforming behavior and asset protection**.
+
+### Key Differences from Voltage Optimisers
+- **Purpose**: Protection, not yield gain
+- **Simplicity**: No MCU, no tracking algorithm
+- **Trigger**: Based on thermal stress, voltage rise, or grid signal—not mismatch
+- **Effect**: Reduces DC-side power delivery before inverter or transformer strain occurs
+
+### Implementation Options
+- Local analog sensing (e.g., string overvoltage)
+- External enable/disable signal line from combiner or substation
+- Optional future integration with SCADA alerts
+
+### Status
+Prototype-ready. Function builds on existing architecture with minimal hardware changes.
+
+
 13. Meaningful contributors
 
 Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge)
