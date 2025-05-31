@@ -194,6 +194,23 @@ Prototype-ready. Function builds on existing architecture with minimal hardware 
 
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge
 
+Addendum: Standards Alignment and Regulatory Pressure
+
+This open hardware design addresses critical safety risks in photovoltaic systems by providing local, module-level protection against arc faults, insulation leakage, and backfeed voltage. It is intended to support or exceed the safety objectives of current international and UK standards.
+	1.	IEC 62548 – PV Array Design Requirements
+Aligns with section 4.6: Protection against faults. Introduces early disconnection logic within the module rather than relying on distant string-level detection.
+	2.	IEC 60364-7-712 – Electrical Installations (PV Systems)
+Supports automatic disconnection requirements in response to insulation or fault conditions, reducing risk of fire or electrocution during operation or maintenance.
+	3.	IEC TS 62738 – Arc Fault Protection
+While focused on string-level detection, this design anticipates the necessary evolution toward source-level intervention to contain arcs early and safely.
+	4.	UL 1699B / NEC 690.11 – Arc Fault Circuit Interruption
+Meets the intent of US standards for rooftop PV safety, but does so through simpler, faster, and MCU-free analog mechanisms.
+	5.	UK Health and Safety Executive (HSE) – Electricity at Work Regulations 1989
+This circuit directly supports employer duties under Regulation 4(1) and 8(1) to prevent electrical danger. It exposes the weakness of existing systems that leave high-voltage DC cables energised under fault conditions.
+
+Interim Risk Acknowledgement
+Until such safety circuits are standardised and embedded in module designs, it is vital that PV system operators conduct regular insulation resistance (Riso) testing—especially in large-scale arrays using 1000–1500 VDC strings. This is the only currently viable method to detect breakdowns that may otherwise go unnoticed until catastrophic failure occurs.
+
 Vikram Kumar
 Ventus Ltd
 United Kingdom
