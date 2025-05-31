@@ -188,9 +188,9 @@ This circuit allows for **autonomous, module-level output throttling or shutdown
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
 
-13. Meaningful contributors
+14. Meaningful contributors
 
-Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge)
+Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Steve Cooper, Steven Mcfadyen
 
 Vikram Kumar
 Ventus Ltd
