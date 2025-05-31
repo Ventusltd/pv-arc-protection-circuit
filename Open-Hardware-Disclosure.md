@@ -65,6 +65,8 @@ Snubber: Across Q1 (R5 + C1)
 TVS Diode: Across PV+ and PV–  
 Bleeder R6: Across Output
 
+Questions for prototype iterations 
+While the design logic is sound, early real-world testing could expose issues like false trips from humidity, EMI, or transient shading—especially without tuned hysteresis or filtering. There’s also risk that fast MOSFET switching, if not properly suppressed, could damage components or fail to interrupt high backfeed safely. Should we include minimal analog tuning (e.g. RC filters or comparator hysteresis) before testing to avoid early failures and reduce the need for multiple prototype iterations?
 
 ⸻
 
@@ -164,27 +166,27 @@ This is a key step toward high-voltage, touch-safe DC systems for clean energy i
 
 13. Module-Level Overload Protection (Transformer & Inverter Safety) - Intelligent DC and AC load flow studies possibilities
 
-### Overview
-This enhancement builds on the core arc suppression circuit by introducing a secondary function: **proactive disconnection during transformer or inverter overload conditions**. It uses the same high-speed MOSFETs already present for safety switching.
+Overview
+This enhancement builds on the core arc suppression circuit by introducing a secondary function: proactive disconnection during transformer or inverter overload conditions. It uses the same high-speed MOSFETs already present for safety switching.
 
-### Problem
-In large-scale PV plants, sudden irradiance changes or low grid demand can lead to **thermal overload** of inverters and **magnetic saturation** of MV transformers. Traditional systems respond too late or rely on inverter logic that may already be compromised.
+Problem
+In large-scale PV plants, sudden irradiance changes or low grid demand can lead tothermal overload of inverters and magnetic saturation** of MV transformers. Traditional systems respond too late or rely on inverter logic that may already be compromised.
 
-### Solution
-This circuit allows for **autonomous, module-level output throttling or shutdown** in response to local or external signals indicating overproduction risk. The goal is not energy optimisation, but **grid-conforming behavior and asset protection**.
+Solution
+This circuit allows for **autonomous, module-level output throttling or shutdown in response to local or external signals indicating overproduction risk. The goal is not energy optimisation, but grid-conforming behavior and asset protection.
 
-### Key Differences from Voltage Optimisers
-- **Purpose**: Protection, not yield gain
-- **Simplicity**: No MCU, no tracking algorithm
-- **Trigger**: Based on thermal stress, voltage rise, or grid signal—not mismatch
-- **Effect**: Reduces DC-side power delivery before inverter or transformer strain occurs
+Key Differences from Voltage Optimisers
+- Purpose: Protection, not yield gain
+- Simplicity: No MCU, no tracking algorithm
+- Trigger: Based on thermal stress, voltage rise, or grid signal—not mismatch
+- Effect: Reduces DC-side power delivery before inverter or transformer strain occurs
 
-### Implementation Options
+Implementation Options
 - Local analog sensing (e.g., string overvoltage)
 - External enable/disable signal line from combiner or substation
 - Optional future integration with SCADA alerts
 
-### Status
+Status
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
 
