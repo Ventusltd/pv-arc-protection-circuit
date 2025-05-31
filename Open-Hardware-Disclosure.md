@@ -194,7 +194,9 @@ Prototype-ready. Function builds on existing architecture with minimal hardware 
 
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge
 
-Addendum: Standards Alignment and Regulatory Pressure
+Addendum: 
+
+Standards Alignment and Regulatory Pressure
 
 This open hardware design addresses critical safety risks in photovoltaic systems by providing local, module-level protection against arc faults, insulation leakage, and backfeed voltage. It is intended to support or exceed the safety objectives of current international and UK standards.
 	1.	IEC 62548 – PV Array Design Requirements
@@ -210,6 +212,14 @@ This circuit directly supports employer duties under Regulation 4(1) and 8(1) to
 
 Interim Risk Acknowledgement
 Until such safety circuits are standardised and embedded in module designs, it is vital that PV system operators conduct regular insulation resistance (Riso) testing—especially in large-scale arrays using 1000–1500 VDC strings. This is the only currently viable method to detect breakdowns that may otherwise go unnoticed until catastrophic failure occurs.
+
+Fire Risk Context for Commercial Rooftop and Utility-Scale PV Systems
+
+Recent incidents such as the rooftop PV fire at a Hospital in Bristol demonstrate that commercial buildings are increasingly vulnerable to electrical fires linked to photovoltaic systems. Large utility-scale solar farms often covering hundreds of hectares—also present significant wildfire hazards, particularly in drought-prone areas like southern Europe, California, and Australia. The 2025 Talaván PV fire in Spain burned over 800 hectares due to a fault in electrical conductors combined with dry vegetation, highlighting the systemic risk.
+
+With over 2 terawatts of PV now installed globally and multi-terawatt annual deployment expected per NREL forecasts, the scale of risk is increasing. High-voltage string architectures (1000 to 1500 volts) and dense layouts raise both ignition potential and the challenge of fault isolation. This open hardware design addresses these risks by enabling autonomous, module-level fault disconnection—particularly relevant for rooftops where delayed access and structural vulnerability add to the danger.
+
+Given the industry size and risk exposure, proactive safety integration must become the norm. This design is released with no commercial restrictions, available for immediate adoption and further development by manufacturers, universities, national labs, and standards committees.
 
 Vikram Kumar
 Ventus Ltd
