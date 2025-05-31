@@ -190,7 +190,7 @@ Prototype-ready. Function builds on existing architecture with minimal hardware 
 
 14. Meaningful contributors
 
-Dr. Giedrius Kopitkovas (espcially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Steve Cooper, Steven Mcfadyen
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen
 
 Vikram Kumar
 Ventus Ltd
