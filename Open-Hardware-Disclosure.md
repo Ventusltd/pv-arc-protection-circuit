@@ -45,7 +45,7 @@ No firmware, signal bus, or central logic required.
 
 ⸻
 
-4. Block Diagram (Text Format)
+4.1 Block Diagram (Text Format) 1 
 
 PV+ ──────┐
           │
@@ -64,6 +64,58 @@ PV+ ──────┐
 Snubber: Across Q1 (R5 + C1)  
 TVS Diode: Across PV+ and PV–  
 Bleeder R6: Across Output
+
+4.2 Block Diagram (Text Format) Detailed iteration 2 
+PV+ ─────┐
+         │
+         ├──► [1] Bypass Diodes ──► OUT+
+         │
+     [2] PV Cells
+         │
+         ├──► [3] TVS Diode ───┐
+         │                    │
+         │               ┌────┴────┐
+         │               │  Snubber │
+         │               └────┬────┘
+         │                    │
+         ├──► [4] Q1 (MOSFET) ───┬──►
+         │                      │
+         └──► [5] Q1B (MOSFET) ──┘──► OUT–
+                                │
+                                ├──► [6] Bleeder Resistor
+                                │
+                                └──► Gate driven by Q2
+                                      ▲
+        ┌─────────────────────────────┴────────────────────────────┐
+        │                                                          │
+ [7] Comparator U1A ◄──── [9] Voltage Divider (R2/R3)     [8] Comparator U1B ◄──── [10] Shunt R4 + RC
+        │                                                          │
+        └──────────────► Logic OR ───────────────► [11] Q2 (PNP Gate Driver)
+                                                             │
+                                                 [12] MOV (Gate–Source Clamp)
+
+Key: Iteration 2 
+[1] Bypass Diodes – Allow current to bypass the module when it is disconnected. Prevents open-string interruption.
+[2] PV Cells – The standard photovoltaic cell string producing DC output.
+[3] TVS Diode – Suppresses transient voltage spikes (e.g. from lightning) across PV+ and PV–.
+[4] Q1 (MOSFET) – Main high-speed N-channel MOSFET switch. Disconnects the module under fault conditions.
+[5] Q1B (MOSFET) – Second N-MOSFET in series for redundancy. Ensures fail-safe isolation if Q1 fails short.
+[6] Bleeder Resistor – Discharges residual voltage on OUT– after MOSFETs open. Improves safety during maintenance.
+[7] Comparator U1A – Monitors voltage divider to detect insulation leakage (PV– to frame).
+[8] Comparator U1B – Monitors ripple on output current for arc fault detection.
+[9] Voltage Divider (R2/R3) – High-value resistor divider that scales leakage voltage for comparator input.
+[10] Shunt Resistor + RC Filter – Detects high-frequency ripple caused by arc faults on output current.
+[11] Q2 (Gate Driver, PNP) – Pulls down MOSFET gate(s) to isolate the module when either comparator trips.
+[12] MOV (Gate–Source Clamp) – Protects the MOSFET gates from voltage overshoot during switching events.
+
+Iteration 2 of the module-level DC arc suppression and insulation fault disconnection circuit introduces several key improvements to enhance safety, reliability, and deployability in real-world photovoltaic systems. The most critical enhancement is the addition of a second N-channel MOSFET (Q1B) in series with the primary switch (Q1), which provides fail-safe isolation in the event that Q1 fails short due to stress, aging, or surge. This dual-MOSFET architecture mirrors best practices found in EV battery packs and other high-reliability DC systems. To improve arc energy absorption, the original snubber capacitor has been upgraded from 2.2 µF film to a 4.7 µF X7R ceramic, enabling more robust suppression of inductive spikes when the MOSFETs disconnect rapidly under load.
+
+Gate protection has also been strengthened with the addition of a MOV or TVS diode across each MOSFET’s gate-source junction, preventing gate oxide damage from voltage overshoots caused by fast switching. To address the risk of nuisance tripping from electromagnetic interference (EMI), transient shading, or inverter switching noise, the TLV7012 comparator has been replaced with the TLV7032, which adds 6 mV of hysteresis—stabilizing trip thresholds and reducing false positives. The arc detection path now includes an explicit RC filter following the shunt resistor (R4), targeting the characteristic high-frequency ripple of DC arcs while rejecting inverter harmonics or normal fluctuations.
+
+In the insulation leakage detection circuit, the high-resistance divider (R2/R3) has been reinforced with clear support for adding a low-pass filter to suppress noise and ensure reliable triggering. A bleeder resistor has been added across the output (OUT–) to safely discharge residual voltage after the MOSFETs disconnect, improving safety during maintenance or emergency response. Logically, the comparator outputs (U1A for leakage and U1B for arc) now feed into a diode-OR gate structure before driving Q2, ensuring that either fault type can independently initiate disconnection. The circuit is also now structured to support optional status signaling—such as a trip LED or remote flag output—to help installers and operators identify faulted modules without relying on central communication systems.
+
+Collectively, these enhancements position the circuit for greater reliability, better immunity to environmental and electrical noise, and improved compatibility with emerging standards like IEC 63027 and UL 1699B. Iteration 2 reflects a more mature, safety-hardened design suitable for global PV deployment at scale.
+
 
 Questions for prototype iterations 
 
@@ -107,6 +159,8 @@ Bypass Diodes	String current continuity	SM74611 (Texas Instruments)
 	•	No external control, MCU, or communications
 	•	Compatible with leading junction box formats
 	•	Enhances safety for installers, first responders, and operations teams
+
+
 
 ⸻
 
