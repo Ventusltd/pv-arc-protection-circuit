@@ -237,15 +237,32 @@ Estimate global data on fires caused by DC-side faults (arcing, insulation break
 
 Estimated Global DC PV Fire Frequency (2025)
 
-+------------------------------+--------------------------------------------------------+----------------------+
-| Source                       | Key Findings                                           | Est. Fires per Day   |
-+------------------------------+--------------------------------------------------------+----------------------+
-| Fraunhofer ISE (2024)        | 1 fire per 2.5 MW/year (older PV systems)              | 3–5                  |
-| Solarif Insurance (2023)     | 35% of 1,200 fire claims linked to DC faults           | 1.2                  |
-| NREL (2025)                  | 0.016% annual fire rate over 2.3 TW capacity           | 1                   |
-| Australia CEC (2024)         | 44% of solar fires from DC arcs (field data)           | 0.8                  |
-| UK Fire Statistics (2024)    | 42 solar-related fires in 2023, mostly DC              | 0.1                  |
-+------------------------------+--------------------------------------------------------+----------------------+
+Estimated Global DC PV Fire Frequency 2025
+
+Fraunhofer ISE 2024
+1 fire per 2.5 MW per year in older PV systems
+Estimated 3 to 5 fires per day
+
+Solarif Insurance 2023
+35 percent of 1200 fire claims linked to DC faults
+Estimated 1.2 fires per day
+
+NREL 2025
+0.016 percent annual fire rate across 2.3 TW installed PV capacity
+Estimated 1 fire per day
+
+Australia Clean Energy Council 2024
+44 percent of solar fires from DC arcs based on field data
+Estimated 0.8 fires per day
+
+UK Fire Statistics 2024
+42 solar-related fires in 2023 mostly DC side
+Estimated 0.1 fires per day
+
+Consolidated estimate
+Between 2 and 4 preventable DC-side fires occur daily worldwide
+This is likely underreported...
+
 
 Consolidated Estimate: 2 to 4 preventable DC-side fires occur daily worldwide.
 This is likely underestimated due to underreporting!
