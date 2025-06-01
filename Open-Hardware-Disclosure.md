@@ -98,7 +98,7 @@ In the insulation leakage detection circuit, the high-resistance divider (R2/R3)
 Collectively, these enhancements position the circuit for greater reliability, better immunity to environmental and electrical noise, and improved compatibility with emerging standards like IEC 63027 and UL 1699B. Iteration 2 reflects a more mature, safety-hardened design suitable for global PV deployment at scale.
 
 
-Questions for prototype iterations 
+5. Questions for prototype iterations 
 
 While the design logic is sound, early real-world testing could expose issues like false trips from humidity, EMI, or transient shading—especially without tuned hysteresis or filtering. There’s also risk that fast MOSFET switching, if not properly suppressed, could damage components or fail to interrupt high backfeed safely. Should we include minimal analog tuning (e.g. RC filters or comparator hysteresis) before testing to avoid early failures and reduce the need for multiple prototype iterations?
 
@@ -116,19 +116,6 @@ Hysteresis (TLV7032) – Already noted; strongly recommended.
 RC Filter Tuning – Adjust time constants to avoid rapid fluctuations.
 MOV on Gate-Source – Prevents MOSFET damage from voltage spikes.
 ⸻
-
-5. Key Components
-
-Component	Function	Example Part
-Q1 (MOSFET)	High-speed disconnect	IPT015N10N5 (Infineon)
-U1	Dual comparator	TLV7012 (Texas Instruments)
-Q2	Gate control switch	BC856 (PNP)
-Snubber	Arc energy absorption	2.2 µF film cap + 10 Ω, 5 W
-R4	Arc ripple detection	1 mΩ, 3 W
-R2/R3	Insulation leakage divider	10 MΩ / 1 MΩ
-TVS Diode	Surge protection	SMAJ120CA
-Bypass Diodes	String current continuity	SM74611 (Texas Instruments)
-
 
 ⸻
 
