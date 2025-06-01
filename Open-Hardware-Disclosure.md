@@ -17,6 +17,7 @@ This open hardware design provides embedded, MCU-free protection against DC arc 
 The system is specifically designed to prevent rooftop fires, vegetation ignition, and wildfires caused by undetected DC arcs in solar installations. Disconnection is gated by sunlight presence inferred from PV voltage and confirmed current flow, preventing false alarms without optical sensors or software.
 
 It enables sub-microsecond autonomous disconnection at module level to mitigate fire, electrocution, and backfeed risks in real-world solar deployments.
+
 ⸻
 
 2. Problem Statement
