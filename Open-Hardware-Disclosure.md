@@ -45,27 +45,7 @@ No firmware, signal bus, or central logic required.
 
 ⸻
 
-4.1 Block Diagram (Text Format) 1 
-
-PV+ ──────┐
-          │
-          ├──────► [Bypass Diodes]
-          │
-       [PV Cells]
-          │
-         [Q1: N-MOSFET] ───► PV– Output
-          │
-   ┌──── Comparator U1A ◄──── Voltage Divider (Leak Sense)
-   │        │
-   │        └──── Gate Drive (Q2)
-   │
-   └──── Comparator U1B ◄──── Shunt R4 + RC Integrator (Arc Sense)
-
-Snubber: Across Q1 (R5 + C1)  
-TVS Diode: Across PV+ and PV–  
-Bleeder R6: Across Output
-
-4.2 Block Diagram (Text Format) Detailed iteration 2 
+Block Diagram (Text Format) Detailed iteration 2 
 PV+ ─────┐
          │
          ├──► [1] Bypass Diodes ──► OUT+
