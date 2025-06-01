@@ -14,6 +14,13 @@ License URL: https://ohwr.org/cern_ohl_s_v2.txt
 
 This open hardware design provides embedded, MCU-free protection against DC arc faults, insulation leakage, and cable or connector failures within photovoltaic (PV) modules. It is intended to achieve nuclear-grade resilience through analog-only fault logic that functions even in high-radiation, EMI-heavy, or railway environments. Disconnection is gated by sunlight presence inferred from PV voltage and confirmed current flow, preventing false alarms without relying on optical sun sensors or digital logic. The system enables sub-microsecond autonomous disconnection at module level to mitigate fire, electrocution, and backfeed risks.
 
+1. Purpose
+
+This open hardware design provides embedded, MCU-free protection against DC arc faults, insulation leakage, and cable or connector failures within photovoltaic (PV) modules. It is intended to achieve nuclear-grade resilience through analog-only fault logic that functions even in high-radiation, EMI-heavy, or railway environments. 
+
+The system is specifically designed to prevent rooftop fires, vegetation ignition, and wildfires caused by undetected DC arcs in solar installations. Disconnection is gated by sunlight presence inferred from PV voltage and confirmed current flow, preventing false alarms without optical sensors or software.
+
+It enables sub-microsecond autonomous disconnection at module level to mitigate fire, electrocution, and backfeed risks in real-world solar deployments.
 ⸻
 
 2. Problem Statement
