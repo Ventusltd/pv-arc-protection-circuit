@@ -78,6 +78,10 @@ Improvements to consider againt nuisance trips along thermal management
 
 + Add MOV across gate-source (Vgs clamp)
 
+Solutions for robustness:
+Hysteresis (TLV7032) – Already noted; strongly recommended.
+RC Filter Tuning – Adjust time constants to avoid rapid fluctuations.
+MOV on Gate-Source – Prevents MOSFET damage from voltage spikes.
 ⸻
 
 5. Key Components
