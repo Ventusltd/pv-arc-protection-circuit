@@ -235,10 +235,6 @@ Global Fire Risk Summary from DC PV Systems
 
 Estimate global data on fires caused by DC-side faults (arcing, insulation breakdown, connector failure) is limited due to inconsistent reporting. However, credible industry estimates show a clear and rising safety risk:
 
-Estimated Global DC PV Fire Frequency (2025)
-
-Estimated Global DC PV Fire Frequency 2025
-
 Fraunhofer ISE 2024
 1 fire per 2.5 MW per year in older PV systems
 Estimated 3 to 5 fires per day
