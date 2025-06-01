@@ -125,6 +125,10 @@ Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight prese
 	•	Enhances safety for installers, first responders, and operations teams
 
 
+• Immune to nuisance tripping caused by EMI, inverter switching, or grid loss, due to PV-voltage-based gating and current presence confirmation
+• Designed for extreme conditions: no MCU, no firmware, no optical sensors — only analog comparators and passive components
+• Operational integrity maintained in radiation-prone, high-noise environments including rail and nuclear infrastructure
+• All trip logic requires sunlight + current + arc signature, reducing false positives to near-zero without digital filtering
 
 ⸻
 
