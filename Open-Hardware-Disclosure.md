@@ -231,7 +231,7 @@ With over 2 terawatts of PV now installed globally and multi-terawatt annual dep
 
 Given the industry size and risk exposure, proactive safety integration must become the norm. This design is released with no commercial restrictions, available for immediate adoption and further development by manufacturers, universities, national labs, and standards committees.
 
-DeepSeek AI – Global Fire Risk Summary from DC PV Systems
+Global Fire Risk Summary from DC PV Systems
 
 Estimate global data on fires caused by DC-side faults (arcing, insulation breakdown, connector failure) is limited due to inconsistent reporting. However, credible industry estimates show a clear and rising safety risk:
 
