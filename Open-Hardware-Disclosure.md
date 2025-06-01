@@ -254,11 +254,6 @@ UK Fire Statistics 2024
 42 solar-related fires in 2023 mostly DC side
 Estimated 0.1 fires per day
 
-Consolidated estimate
-Between 2 and 4 preventable DC-side fires occur daily worldwide
-This is likely underreported...
-
-
 Consolidated Estimate: 2 to 4 preventable DC-side fires occur daily worldwide.
 This is likely underestimated due to underreporting!
 
