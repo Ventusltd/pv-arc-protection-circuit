@@ -106,6 +106,11 @@ Solutions for robustness:
 Hysteresis (TLV7032) – Already noted; strongly recommended.
 RC Filter Tuning – Adjust time constants to avoid rapid fluctuations.
 MOV on Gate-Source – Prevents MOSFET damage from voltage spikes.
+
+Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight presence.
+	•	Validate triple-condition logic: PV+ high, current > 0, ripple sustained → required to trigger disconnect.
+	•	Assess whether adding an optical sun sensor provides real benefit, or introduces unnecessary complexity.
+	•	Verify immunity to EMI transients under IEC 61000-4-4 and -4-5 conditions using this analog gating.
 ⸻
 
 ⸻
