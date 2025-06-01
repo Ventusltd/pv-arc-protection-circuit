@@ -162,8 +162,8 @@ We specifically invite:
 
 Collaborative scale-up toward NREL’s 75 TWp net-zero solar targets
 
-10. Approximate size 
-Estimated: 35×45 mm PCB, <10 mm height, 2 oz copper, ~15 components, 40 A rated, single-sided SMD, no MCU, low-to-moderate complexity, SMT reflow compatible, fits standard Staubli/Amphenol J-boxes.
+10. Approximate size
+Estimated: 35 × 45 mm PCB, < 10 mm height, 2 oz copper, ~20 SMD components (dual MOSFETs, MOVs, RC filter, bleeder, gate pull-down, etc.), 40 A rated, single-sided, no MCU, low-to-moderate complexity, SMT-reflow compatible, fits standard Staubli/Amphenol junction boxes.
 
 11. Proof of concept from other industries
 
