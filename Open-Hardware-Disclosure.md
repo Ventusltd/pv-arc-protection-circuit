@@ -102,15 +102,6 @@ Collectively, these enhancements position the circuit for greater reliability, b
 
 While the design logic is sound, early real-world testing could expose issues like false trips from humidity, EMI, or transient shading—especially without tuned hysteresis or filtering. There’s also risk that fast MOSFET switching, if not properly suppressed, could damage components or fail to interrupt high backfeed safely. Should we include minimal analog tuning (e.g. RC filters or comparator hysteresis) before testing to avoid early failures and reduce the need for multiple prototype iterations?
 
-Improvements to consider againt nuisance trips along thermal management
-- Comparator U1: TLV7012 (no hysteresis)
-+ TLV7032 (6mV hysteresis, push-pull output)
-
-- Snubber: 2.2µF film cap
-+ 4.7µF X7R (higher surge absorption)
-
-+ Add MOV across gate-source (Vgs clamp)
-
 Solutions for robustness:
 Hysteresis (TLV7032) – Already noted; strongly recommended.
 RC Filter Tuning – Adjust time constants to avoid rapid fluctuations.
