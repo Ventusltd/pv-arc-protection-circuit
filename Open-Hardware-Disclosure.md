@@ -220,7 +220,7 @@ Until such safety circuits are standardised and embedded in module designs, it i
 
 Fire Risk Context for Commercial Rooftop and Utility-Scale PV Systems
 
-Recent incidents such as the rooftop PV fire at a Hospital in Bristol demonstrate that commercial buildings are increasingly vulnerable to electrical fires linked to photovoltaic systems. Large utility-scale solar farms often covering hundreds of hectares—also present significant wildfire hazards, particularly in drought-prone areas like southern Europe, California, and Australia. The 2025 Talaván PV fire in Spain burned over 800 hectares due to a fault in electrical conductors combined with dry vegetation, highlighting the systemic risk.
+Recent incidents such as the rooftop PV fire at a Hospital in Bristol demonstrate that commercial buildings are increasingly vulnerable to electrical fires linked to photovoltaic systems. Large utility-scale solar farms often covering hundreds of hectares—also present significant wildfire hazards, particularly in drought-prone areas like southern Europe, California, and Australia. The 2024 Talaván PV fire in Spain burned over 800 hectares due to a fault in electrical conductors combined with dry vegetation, highlighting the systemic risk.
 
 With over 2 terawatts of PV now installed globally and multi-terawatt annual deployment expected per NREL forecasts, the scale of risk is increasing. High-voltage string architectures (1000 to 1500 volts) and dense layouts raise both ignition potential and the challenge of fault isolation. This open hardware design addresses these risks by enabling autonomous, module-level fault disconnection—particularly relevant for rooftops where delayed access and structural vulnerability add to the danger.
 
