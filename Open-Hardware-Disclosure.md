@@ -231,15 +231,9 @@ With over 2 terawatts of PV now installed globally and multi-terawatt annual dep
 
 Given the industry size and risk exposure, proactive safety integration must become the norm. This design is released with no commercial restrictions, available for immediate adoption and further development by manufacturers, universities, national labs, and standards committees.
 
-DeepSeek AI search on fires caused by DC PV
-
-Certainly. Below is the final plain-text version, including a clean ASCII-style table for estimated fire rates, suitable for email, GitHub, or standards-body submission. No formatting markup used.
-
-⸻
-
 DeepSeek AI – Global Fire Risk Summary from DC PV Systems
 
-Accurate global data on fires caused by DC-side faults (arcing, insulation breakdown, connector failure) is limited due to inconsistent reporting. However, credible industry estimates show a clear and rising safety risk:
+Estimate global data on fires caused by DC-side faults (arcing, insulation breakdown, connector failure) is limited due to inconsistent reporting. However, credible industry estimates show a clear and rising safety risk:
 
 Estimated Global DC PV Fire Frequency (2025)
 
@@ -254,7 +248,7 @@ Estimated Global DC PV Fire Frequency (2025)
 +—————————––+————————————————————+–––––––––––––+
 
 Consolidated Estimate: 2 to 4 preventable DC-side fires occur daily worldwide.
-This is likely underestimated due to underreporting, especially in China, India, Southeast Asia, and Africa.
+This is likely underestimated due to underreporting!
 
 Root Causes of DC Fires (industry averages)
 	•	61%: Connector failure (mismatch, poor crimps, thermal cycling)
