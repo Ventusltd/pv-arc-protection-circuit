@@ -199,11 +199,6 @@ Implementation Options
 Status
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
-
-14. Meaningful contributors
-
-Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge
-
 Addendum: 
 
 Standards Alignment and Regulatory Pressure
@@ -289,6 +284,10 @@ Primary Sources
 
 Recommendation
 Use this evidence to support urgent updates to IEC 62548, UL 1699B, NEC 690.11, and rapid shutdown standards. Module-level analog protection circuits offer a simple, reliable, and scalable solution to one of the most persistent risks in global PV deployment.
+
+Meaningful contributors
+
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge
 
 Vikram Kumar
 Ventus Ltd
