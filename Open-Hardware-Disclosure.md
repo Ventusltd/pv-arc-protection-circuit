@@ -45,7 +45,8 @@ No firmware, signal bus, or central logic required.
 
 ⸻
 
-Block Diagram (Text Format) Detailed iteration 2 
+4. Block Diagram (Text Format) Detailed iteration 2 
+
 PV+ ─────┐
          │
          ├──► [1] Bypass Diodes ──► OUT+
