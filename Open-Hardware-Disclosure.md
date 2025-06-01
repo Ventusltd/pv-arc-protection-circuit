@@ -180,7 +180,7 @@ Overview
 This enhancement builds on the core arc suppression circuit by introducing a secondary function: proactive disconnection during transformer or inverter overload conditions. It uses the same high-speed MOSFETs already present for safety switching.
 
 Problem
-In large-scale PV plants, sudden irradiance changes or low grid demand can lead tothermal overload of inverters and magnetic saturation** of MV transformers. Traditional systems respond too late or rely on inverter logic that may already be compromised.
+In large-scale PV plants, sudden irradiance changes or low grid demand can lead to thermal overload of inverters and magnetic saturation** of MV transformers. Traditional systems respond too late or rely on inverter logic that may already be compromised.
 
 Solution
 This circuit allows for **autonomous, module-level output throttling or shutdown in response to local or external signals indicating overproduction risk. The goal is not energy optimisation, but grid-conforming behavior and asset protection.
@@ -237,15 +237,15 @@ Estimate global data on fires caused by DC-side faults (arcing, insulation break
 
 Estimated Global DC PV Fire Frequency (2025)
 
-+—————————––+————————————————————+–––––––––––––+
-| Source                        | Key Findings                                               | Est. Fires per Day       |
-+—————————––+————————————————————+–––––––––––––+
-| Fraunhofer ISE (2024)         | 1 fire per 2.5 MW/year (older PV systems)                 | 3–5                      |
-| Solarif Insurance (2023)      | 35% of 1,200 fire claims linked to DC faults              | 1.2                      |
-| NREL (2025)                   | 0.016% annual fire rate over 2.3 TW capacity              | ~1                       |
-| Australia CEC (2024)          | 44% of solar fires from DC arcs (field data)              | 0.8                      |
-| UK Fire Statistics (2024)     | 42 solar-related fires in 2023, mostly DC                 | 0.1                      |
-+—————————––+————————————————————+–––––––––––––+
++------------------------------+--------------------------------------------------------+----------------------+
+| Source                       | Key Findings                                           | Est. Fires per Day   |
++------------------------------+--------------------------------------------------------+----------------------+
+| Fraunhofer ISE (2024)        | 1 fire per 2.5 MW/year (older PV systems)              | 3–5                  |
+| Solarif Insurance (2023)     | 35% of 1,200 fire claims linked to DC faults           | 1.2                  |
+| NREL (2025)                  | 0.016% annual fire rate over 2.3 TW capacity           | 1                   |
+| Australia CEC (2024)         | 44% of solar fires from DC arcs (field data)           | 0.8                  |
+| UK Fire Statistics (2024)    | 42 solar-related fires in 2023, mostly DC              | 0.1                  |
++------------------------------+--------------------------------------------------------+----------------------+
 
 Consolidated Estimate: 2 to 4 preventable DC-side fires occur daily worldwide.
 This is likely underestimated due to underreporting!
