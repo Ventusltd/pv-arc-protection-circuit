@@ -283,8 +283,6 @@ Primary Sources
 Recommendation
 Use this evidence to support urgent updates to IEC 62548, UL 1699B, NEC 690.11, and rapid shutdown standards. Module-level analog protection circuits offer a simple, reliable, and scalable solution to one of the most persistent risks in global PV deployment.
 
-#NoMoreSilentFires
-
 Vikram Kumar
 Ventus Ltd
 United Kingdom
