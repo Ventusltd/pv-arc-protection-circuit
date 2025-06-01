@@ -257,6 +257,16 @@ Implementation Options
 Status
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
+14. Implementation Responsibility and System-Level Integration
+
+While this open hardware design defines a fail-safe module-level protection circuit, it is strongly recommended that qualified PCB and power electronics engineers be consulted to validate implementation before any prototyping or manufacturing. The system’s electrical behavior must be assessed not only at the component level, but from the PV cell output through to the grid connection, including:
+	•	DC and AC load flow studies across the full array, inverter, transformer, and grid interface
+	•	Insulation coordination analysis, considering worst-case overvoltage, surge, and creepage/clearance conditions
+	•	Thermal modelling, especially under sustained arc fault or leakage conditions
+	•	Mechanical integration, including connector integrity, enclosure ratings, and environmental protection
+
+Many historical PV system failures—including DC arcs, backfeed faults, and fire incidents—have occurred not from a single component fault but from weak points in the full electrical chain. Therefore, this circuit should be integrated as part of a coordinated protection scheme that spans from cell level to transformer level, ensuring that interaction with inverter behavior, string layouts, bypass diodes, and grounding methods is fully understood and optimized.
+
 Addendum: 
 
 Standards Alignment and Regulatory Pressure
