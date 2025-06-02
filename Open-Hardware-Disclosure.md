@@ -18,6 +18,8 @@ The system is specifically designed to prevent rooftop fires, vegetation ignitio
 
 It enables sub-microsecond autonomous disconnection at module level to mitigate fire, electrocution, and backfeed risks in real-world solar deployments.
 
+This PCB is designed to go inside the module’s junction box and function as a module-level protection element — enabling system-wide fire and fault risk reduction whether the site is 10 kW or 1000 MWp.
+
 ⸻
 
 2. Problem Statement
