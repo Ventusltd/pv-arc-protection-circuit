@@ -3,7 +3,9 @@ Open Hardware Disclosure
 Module-Level DC Arc Suppression and Insulation Fault Disconnection Circuit for PV Systems
 
 License: CERN OHL-S v2
-Version: 1.3.2
+DOI: https://doi.org/10.5281/zenodo.15571844  
+Published: 2025-06-02 (v1.3.2.1)
+Version: 1.3.2.1
 Author: Vikram (Ventus Ltd)
 Date: 2025-05-29
 License URL: https://ohwr.org/cern_ohl_s_v2.txt
