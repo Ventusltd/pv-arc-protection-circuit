@@ -116,7 +116,7 @@ Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight prese
 	•	Assess whether adding an optical sun sensor provides real benefit, or introduces unnecessary complexity.
 	•	Verify immunity to EMI transients under IEC 61000-4-4 and -4-5 conditions using this analog gating.
 
-For harsh environments like Nuclear, Industrial plants or Railway 
+For harsh environments such as nuclear facilities, industrial plants, or railway systems
 
 Initial field validation should include EMI immunity testing to IEC 61000-4-6 (conducted disturbances) and thermal stress cycles per IEC 60068.
 ⸻
