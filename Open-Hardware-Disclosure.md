@@ -327,6 +327,28 @@ Primary Sources
 Recommendation
 Use this evidence to support urgent updates to IEC 62548, UL 1699B, NEC 690.11, and rapid shutdown standards. Module-level analog protection circuits offer a simple, reliable, and scalable solution to one of the most persistent risks in global PV deployment.
 
+Freedom to Operate Statement (Engineering-Level, Non-Legal)
+
+This open hardware design—Module-Level DC Arc Suppression and Insulation Fault Disconnection Circuit for PV Systems—is an independently developed, analog-only solution released under the CERN OHL-S v2 license.
+
+The circuit architecture:
+	•	Relies entirely on passive and comparator-based analog logic
+	•	Contains no software, firmware, microcontroller, or digital communication logic
+	•	Is designed for integration inside the PV module junction box
+	•	Enables autonomous, sub-microsecond disconnection in response to arc or insulation faults
+
+Freedom to Operate Statement
+(Engineering-Level, Non-Legal)
+
+A review of current industry practices and public documentation indicates that no known commercial PV module in the 400–800 Wp class currently ships with built-in arc suppression or insulation fault disconnection inside the junction box using analog-only methods.
+
+This disclosure is made in good faith, in the public interest, and without the intention to infringe or compete with proprietary platforms that rely on software, central coordination, or digital control logic.
+
+Any overlap with preexisting commercial systems—if asserted—will be considered carefully and transparently. However, this design was created from first principles, based on decades of high-voltage industrial safety experience and is fundamentally distinct in method and intent.
+
+We assert the right to publish, share, manufacture, and refine this design under the terms of the CERN OHL-S license, and welcome collaborative engagement from all sectors—including industry, research, and standards bodies.
+
+
 Meaningful contributors
 
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge
