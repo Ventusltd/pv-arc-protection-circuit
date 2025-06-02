@@ -243,6 +243,38 @@ Implementation Options
 Status
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
+Here is a concise, high-impact addendum you can append to your Open Hardware Disclosure to reflect SPD behavior and future evolution:
+
+⸻
+
+Surge Protection Behavior and Future Expansion (to protect inverters or combiners against DC surges)
+
+This design, while focused on DC arc suppression and insulation fault disconnection, also exhibits characteristics aligned with Type 2 DC surge protective devices (SPDs) as defined in IEC 61643-31.
+
+Surge Protection Attributes:
+	•	Sub-microsecond response time through fast N-MOSFET shutdown
+	•	Integrated TVS diode and MOV clamping across PV output
+	•	Snubber capacitor to absorb inductive kickback from cable or array transients
+	•	Failsafe disconnection to fully isolate surge-damaged segments from the array
+
+Planned Enhancements (Optional for Future Versions):
+	•	Addition of dedicated high-energy MOV for lightning-class events (8/20 µs waveform)
+	•	Coordination with thermal fuse or thermal cut-off for MOV end-of-life signaling
+	•	Optional PE-grounded surge path for PV+ or PV– via clamped diversion
+	•	Analog surge sensing logic could evolve to trigger disconnect + clamp, offering both surge suppression and energy isolation—exceeding conventional SPD behavior
+
+Novelty:
+Unlike traditional SPDs, which remain electrically connected post-surge, this design uniquely offers the ability to:
+
+Suppress the surge, then open the circuit.
+
+This provides superior safety in PV arrays, especially in 1000–1500 VDC systems deployed across long cable runs and lightning-prone terrain.
+
+This arc protection circuit may thus serve a dual role:
+As a PV-specific SPD analog and as a selective disconnector, representing a new class of hybrid protection.
+
+⸻
+
 14. Implementation Responsibility and System-Level Integration
 
 While this open hardware design defines a fail-safe module-level protection circuit, it is strongly recommended that qualified PCB and power electronics engineers be consulted to validate implementation before any prototyping or manufacturing. The system’s electrical behavior must be assessed not only at the component level, but from the PV cell output through to the grid connection, including:
