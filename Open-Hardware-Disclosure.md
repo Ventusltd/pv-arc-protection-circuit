@@ -243,11 +243,7 @@ Implementation Options
 Status
 Prototype-ready. Function builds on existing architecture with minimal hardware changes.
 
-Here is a concise, high-impact addendum you can append to your Open Hardware Disclosure to reflect SPD behavior and future evolution:
-
-⸻
-
-Surge Protection Behavior and Future Expansion (to protect inverters or combiners against DC surges)
+13.1 Surge Isolation: SPD Behavior Plus Active Disconnect ans Future Expansion (to protect inverters or combiners against DC surges)
 
 This design, while focused on DC arc suppression and insulation fault disconnection, also exhibits characteristics aligned with Type 2 DC surge protective devices (SPDs) as defined in IEC 61643-31.
 
