@@ -24,6 +24,9 @@ This PCB is designed to go inside the module’s junction box and function as a 
 
 Designed with high-noise, high-security, and high-voltage environments in mind, and intended to scale with modules across utility systems. It also serves domestic and commercial sectors with ease, offering high reliability and straightforward replacement of modules or components in the  event of failure.
 
+We envision solar modules that protect themselves, disconnect in microseconds, and rejoin the system without human intervention — once it’s safe to do so.
+No software, no reboot, no delay.
+
 ⸻
 
 2. Problem Statement
