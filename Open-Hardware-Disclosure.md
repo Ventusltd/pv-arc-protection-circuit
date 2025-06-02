@@ -115,6 +115,10 @@ Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight prese
 	•	Validate triple-condition logic: PV+ high, current > 0, ripple sustained → required to trigger disconnect.
 	•	Assess whether adding an optical sun sensor provides real benefit, or introduces unnecessary complexity.
 	•	Verify immunity to EMI transients under IEC 61000-4-4 and -4-5 conditions using this analog gating.
+
+For harsh environments like Nuclear, Industrial plants or Railway 
+
+Initial field validation should include EMI immunity testing to IEC 61000-4-6 (conducted disturbances) and thermal stress cycles per IEC 60068.
 ⸻
 
 ⸻
@@ -134,6 +138,7 @@ Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight prese
 • Operational integrity maintained in radiation-prone, high-noise environments including rail and nuclear infrastructure
 • All trip logic requires sunlight + current + arc signature, reducing false positives to near-zero without digital filtering
 
+Fully testable at the analog level without debug tools — no code lockups, boot dependencies, or startup race conditions
 ⸻
 
 7. Economic Justification
