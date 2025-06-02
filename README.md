@@ -7,3 +7,5 @@ This open hardware design enables **sub-microsecond, MCU-free disconnection** of
 Built for **wildfire prevention**, **rooftop safety**, and **nuclear-grade EMI immunity**, it uses only analog components — no firmware, no software, no false alarms.
 
 📜 Licensed under CERN OHL-S v2 • Released by Ventus Ltd • [View Disclosure](./Open-Hardware-Disclosure.md)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15571844.svg)](https://doi.org/10.5281/zenodo.15571844)
