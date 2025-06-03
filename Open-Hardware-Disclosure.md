@@ -280,12 +280,11 @@ In the energy industry, lithium-ion battery systems — even at voltages below 6
 Despite their lower system voltages and integrated BMS, batteries are subject to stricter safety regulations than most PV systems.
 
 By contrast, photovoltaic strings:
-
 • Routinely operate at 600 to 1500 VDC  
 • Contain no module-level active fault protection  
 • Remain energised at all times under sunlight  
 • Rely on installer-dependent external disconnect methods  
-• Future PV systems are already under study at up to 3000 VDC, where arc risk escalates non-linearly
+• Future PV systems are already under study at up to 3000 VDC, where arc risk escalates non-linearly  
 
 
 ⸻
