@@ -290,7 +290,7 @@ By contrast, photovoltaic strings:
 
 ⸻
 
-Future PV systems are already under study at up to 3000 VDC.14. Implementation Responsibility and System-Level Integration
+14. Implementation Responsibility and System-Level Integration
 
 While this open hardware design defines a fail-safe module-level protection circuit, it is strongly recommended that qualified PCB and power electronics engineers be consulted to validate implementation before any prototyping or manufacturing. The system’s electrical behavior must be assessed not only at the component level, but from the PV cell output through to the grid connection, including:
 	•	DC and AC load flow studies across the full array, inverter, transformer, and grid interface
