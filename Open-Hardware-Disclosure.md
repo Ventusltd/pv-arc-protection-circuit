@@ -280,11 +280,12 @@ In the energy industry, lithium-ion battery systems — even at voltages below 6
 Despite their lower system voltages and integrated BMS, batteries are subject to stricter safety regulations than most PV systems.
 
 By contrast, photovoltaic strings:
-	•	Routinely operate at 600 to 1500 VDC,
-	•	Contain no module-level active fault protection,
-	•	Remain energised at all times under sunlight,
-	•	And rely on installer-dependent external disconnect methods.
-        •    Future PV systems are already under study at up to 3000 VDC, where solar panels capable of autonomous disconnection and recovery may become indispensable, positioning this architecture as a potentially scalable and safety-critical solution.
+
+• Routinely operate at 600 to 1500 VDC  
+• Contain no module-level active fault protection  
+• Remain energised at all times under sunlight  
+• Rely on installer-dependent external disconnect methods  
+• Future PV systems are already under study at up to 3000 VDC, where arc risk escalates non-linearly
 
 
 ⸻
@@ -401,7 +402,7 @@ We assert the right to publish, share, manufacture, and refine this design under
 
 Meaningful contributors
 
-Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking) , Mr. Marc Scambler, Mr. Matthew Xenakis
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking) , Mr. Marc Scambler, Mr. Matthew Xenakis
 
 Vikram Kumar
 Ventus Ltd
