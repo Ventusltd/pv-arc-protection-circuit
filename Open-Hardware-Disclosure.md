@@ -269,6 +269,24 @@ This provides superior safety in PV arrays, especially in 1000–1500 VDC syst
 This arc protection circuit may thus serve a dual role:
 As a PV-specific SPD analog and as a selective disconnector, representing a new class of hybrid protection.
 
+13.2 Precedent from Battery Safety and the Escalation Toward 3000 VDC: Batteries Are Already Treated as Fire Hazards — PV Must Follow
+
+In the energy industry, lithium-ion battery systems — even at voltages below 60 VDC — are universally classified as fire-sensitive components. As such, they are required to include:
+	•	Per-cell voltage, current, and thermal protection
+	•	Fast-acting MOSFET-based battery management systems (BMS)
+	•	Embedded fault logic and internal disconnects
+	•	Certification under safety frameworks such as UL9540A and IEC 62619
+
+Despite their lower system voltages and integrated BMS, batteries are subject to stricter safety regulations than most PV systems.
+
+By contrast, photovoltaic strings:
+	•	Routinely operate at 600 to 1500 VDC,
+	•	Contain no module-level active fault protection,
+	•	Remain energised at all times under sunlight,
+	•	And rely on installer-dependent external disconnect methods.
+        •    Future PV systems already being studied up to 3kV systems 
+
+
 ⸻
 
 14. Implementation Responsibility and System-Level Integration
@@ -371,9 +389,6 @@ The circuit architecture:
 	•	Contains no software, firmware, microcontroller, or digital communication logic
 	•	Is designed for integration inside the PV module junction box
 	•	Enables autonomous, sub-microsecond disconnection in response to arc or insulation faults
-
-Freedom to Operate Statement
-(Engineering-Level, Non-Legal)
 
 A review of current industry practices and public documentation indicates that no known commercial PV module in the 400–800 Wp class currently ships with built-in arc suppression or insulation fault disconnection inside the junction box using analog-only methods.
 
