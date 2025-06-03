@@ -386,7 +386,7 @@ We assert the right to publish, share, manufacture, and refine this design under
 
 Meaningful contributors
 
-Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar, Mr. Marc Scambler, Mr. Matthew Xenakis, Ms. Erin Mahan 
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowleldge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar, Mr. Marc Scambler, Mr. Matthew Xenakis, 
 
 Vikram Kumar
 Ventus Ltd
