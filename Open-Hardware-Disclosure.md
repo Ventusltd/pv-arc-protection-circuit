@@ -44,6 +44,14 @@ Standard fuses and AFCIs often miss low-current faults or trip too late. Battery
 
 3. Solution Overview
 
+Exeutive summary based on iteration 3
+
+Dual 1700 V SiC MOSFETs in series for 2–3 kV withstand, <1 µs disconnection via analog comparator logic — no MCU, no reboot, no comms.
+Arc fault detected through shunt + RC filter (30–100 kHz ripple), insulation leakage via 10 MΩ divider to frame, both feeding a diode-OR comparator trigger.
+Gate pull-down by PNP transistor, protected with 18 V MOV clamp; surge absorbed via TVS + snubber (2.2–4.7 µF + 100 Ω).
+Entire system self-energised via PV voltage (>15 V = sun logic gate).
+PCB fits 35 × 45 mm, <10 mm height, ~20 SMD components, designed for Stäubli/Amphenol j-boxes at up to 40 A continuous, 1500–2000 VDC.
+
 The proposed circuit integrates within the module junction box and includes:
 	•	High-speed N-MOSFET disconnection (<1 µs)
 	•	Passive snubber and TVS for arc energy absorption
