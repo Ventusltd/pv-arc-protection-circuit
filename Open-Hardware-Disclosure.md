@@ -398,10 +398,18 @@ Any overlap with preexisting commercial systems—if asserted—will be consider
 
 We assert the right to publish, share, manufacture, and refine this design under the terms of the CERN OHL-S license, and welcome collaborative engagement from all sectors—including industry, research, and standards bodies.
 
+Disclaimer 
+
+The author makes no warranty, express or implied, regarding safety, fitness for purpose, or compliance with local electrical regulations. Field use requires insulation coordination, surge and arc destruction testing, and environmental validation in accordance with applicable standards (e.g. IEC 62548, IEC 61730, UL 1699B).
+
+Misuse or modification of this design without testing may result in serious failure or fire. Use at your own risk.
+
+⚠️ This is a safety-critical design. Use only under the direction of a Chartered Electronics Engineer or equivalent professional.
+
 
 Meaningful contributors
 
-Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking) , Mr. Marc Scambler, Mr. Matthew Xenakis
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis
 
 Vikram Kumar
 Ventus Ltd
