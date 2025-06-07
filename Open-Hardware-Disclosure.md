@@ -58,7 +58,7 @@ No firmware, signal bus, or central logic required.
 
 ⸻
 
-4. Block Diagram (Text Format) Detailed iteration 2 
+4. Block Diagram (Text Format) Detailed iteration 2
 
 PV+ ─────┐
          │
@@ -109,6 +109,86 @@ Gate protection has also been strengthened with the addition of a MOV or TVS dio
 In the insulation leakage detection circuit, the high-resistance divider (R2/R3) has been reinforced with clear support for adding a low-pass filter to suppress noise and ensure reliable triggering. A bleeder resistor has been added across the output (OUT–) to safely discharge residual voltage after the MOSFETs disconnect, improving safety during maintenance or emergency response. Logically, the comparator outputs (U1A for leakage and U1B for arc) now feed into a diode-OR gate structure before driving Q2, ensuring that either fault type can independently initiate disconnection. The circuit is also now structured to support optional status signaling—such as a trip LED or remote flag output—to help installers and operators identify faulted modules without relying on central communication systems.
 
 Collectively, these enhancements position the circuit for greater reliability, better immunity to environmental and electrical noise, and improved compatibility with emerging standards like IEC 63027 and UL 1699B. Iteration 2 reflects a more mature, safety-hardened design suitable for global PV deployment at scale.
+
+Iteration 3 
+
+PV+ ───┬─────────────────────────────────────────────────────┐
+       │                                                     │
+   [3] TVS Diode                                             │
+       │                                                     │
+   ┌───▼────┐                                                 │
+   │Snubber│                                                 │
+   └───┬────┘                                                 │
+       │                                                     ▼
+     [1] Bypass Diodes ───────────────────────────────────► OUT+
+       │
+   [2] PV Cells
+       │
+   ┌───▼────┐
+   │ Q1     │──┐
+   │ MOSFET │  │
+   └───┬────┘  │
+       │    ┌─▼───────┐
+   [5] R1   │ Q1B      │
+   10 MΩ    │ MOSFET   │─────► OUT–
+       │    └────┬────┘
+       │         │
+       └─────────┘
+                 │
+             [6] Bleeder Resistor
+                 │
+                 ▼
+              Discharge
+
+Gate Drive Control Path:
+ ┌──────────────────────────────────────────────────────────────┐
+ │                                                              │
+ │ [7] Comparator U1A ◄──── [9] Voltage Divider (R2/R3)         │
+ │                                                              │
+ │ [8] Comparator U1B ◄──── [10] Shunt R4 + RC Filter           │
+ │                                                              │
+ └────────► Diode-OR Logic ──────► [11] Q2 (PNP Gate Driver) ──►
+                                                  │
+                                         [12] MOV Gate Clamp
+
+Iteration 3 
+
+Bill of Materials (BOM)
+					 
+1.	Q1, Q1B – SiC N-Channel MOSFETs
+Infineon IMZA65R027M1H, 1700 V, 27 mΩ, TO-247
+	2.	Q2 – PNP Gate Driver
+BC327, 45 V, 800 mA, TO-92
+	3.	TVS Diode (across PV+ to PV–)
+Littelfuse SMCJ1000CA, 1000 V clamp, DO-214AB
+	4.	MOV (Gate–Source Clamp)
+Littelfuse V18ZA1 or 18 V bidirectional TVS, SMC package
+	5.	Snubber Capacitor
+WIMA MKP10, 2.2 µF, 1600 VDC, Film Cap
+	6.	Snubber Resistor
+100 Ω, 2 W, Metal Film (Vishay PR02)
+	7.	Bleeder Resistors (across each MOSFET)
+10 MΩ, 0.25 W, axial, 1% tolerance (x2)
+	8.	Comparator – Dual Analog Comparator with Hysteresis
+TLV7032, SOT-23-6, rail-to-rail, 6 mV hysteresis
+	9.	Voltage Divider Resistors (Insulation Fault Detect)
+R2: 10 MΩ, R3: 100 kΩ, both 0.5 W rated, 1% tolerance
+	10.	Shunt Resistor (Arc Ripple Detect)
+0.1 Ω, 1 W, 1% low-inductance metal strip
+	11.	RC Filter Components (post-shunt)
+1 kΩ resistor + 100 nF ceramic (X7R), 100 V rating
+	12.	Diode-OR (for comparator outputs)
+1N4148 (x2), fast switching diodes, 75 V, SOD-123 or DO-35
+
+
+Iteration 3 Summary (to compare with ealier concept)
+	•	Q1 and Q1B are now explicitly shown in series for 2 kV withstand.
+	•	Both gates are driven together by Q2 (PNP) after either comparator trips.
+	•	Gate protection now includes MOV clamp, and layout assumes full discharge path.
+	•	TVS diode and snubber are upstream, correctly protecting against line surges and inductive spikes.
+	•	Comparator outputs are fed into a diode-OR, ensuring either arc or leakage detection activates disconnection.
+	•	Bleeder and voltage-sharing resistors are visible, enabling stable voltage division across MOSFETs.
+	•	Overall structure now matches both schematic and physical layout intent.
 
 
 5. Questions for prototype iterations 
