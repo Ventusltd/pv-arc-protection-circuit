@@ -216,9 +216,6 @@ Confirm PV+ voltage threshold (~15 V) as a sufficient proxy for sunlight prese
 For harsh environments such as nuclear facilities, industrial plants, or railway systems
 
 Initial field validation should include EMI immunity testing to IEC 61000-4-6 (conducted disturbances) and thermal stress cycles per IEC 60068.
-⸻
-
-⸻
 
 6. Benefits
 	•	Ultra-fast arc suppression (<1 µs)
@@ -374,9 +371,6 @@ By contrast, photovoltaic strings:
 • Rely on installer-dependent external disconnect methods  
 • Future PV systems are already under study at up to 3000 VDC, where arc risk escalates non-linearly  
 
-
-⸻
-
 14. Implementation Responsibility and System-Level Integration
 
 While this open hardware design defines a fail-safe module-level protection circuit, it is strongly recommended that qualified PCB and power electronics engineers be consulted to validate implementation before any prototyping or manufacturing. The system’s electrical behavior must be assessed not only at the component level, but from the PV cell output through to the grid connection, including:
@@ -387,9 +381,7 @@ While this open hardware design defines a fail-safe module-level protection circ
 
 Many historical PV system failures—including DC arcs, backfeed faults, and fire incidents—have occurred not from a single component fault but from weak points in the full electrical chain. Therefore, this circuit should be integrated as part of a coordinated protection scheme that spans from cell level to transformer level, ensuring that interaction with inverter behavior, string layouts, bypass diodes, and grounding methods is fully understood and optimized.
 
-Addendum: 
-
-Standards Alignment and Regulatory Pressure
+14.1 Standards Alignment and Regulatory Pressure
 
 This open hardware design addresses critical safety risks in photovoltaic systems by providing local, module-level protection against arc faults, insulation leakage, and backfeed voltage. It is intended to support or exceed the safety objectives of current international and UK standards.
 	1.	IEC 62548 – PV Array Design Requirements
@@ -406,7 +398,7 @@ This circuit directly supports employer duties under Regulation 4(1) and 8(1) to
 Interim Risk Acknowledgement
 Until such safety circuits are standardised and embedded in module designs, it is vital that PV system operators conduct regular insulation resistance (Riso) testing—especially in large-scale arrays using 1000–1500 VDC strings. This is the only currently viable method to detect breakdowns that may otherwise go unnoticed until catastrophic failure occurs.
 
-Fire Risk Context for Commercial Rooftop and Utility-Scale PV Systems
+14.2 Fire Risk Context for Commercial Rooftop and Utility-Scale PV Systems
 
 Recent incidents such as the rooftop PV fire at a Hospital in Bristol demonstrate that commercial buildings are increasingly vulnerable to electrical fires linked to photovoltaic systems. Large utility-scale solar farms often covering hundreds of hectares—also present significant wildfire hazards, particularly in drought-prone areas like southern Europe, California, and Australia. The 2024 Talaván PV fire in Spain burned over 800 hectares due to a fault in electrical conductors combined with dry vegetation, highlighting the systemic risk.
 
@@ -414,7 +406,7 @@ With over 2 terawatts of PV now installed globally and multi-terawatt annual dep
 
 Given the industry size and risk exposure, proactive safety integration must become the norm. This design is released with no commercial restrictions, available for immediate adoption and further development by manufacturers, universities, national labs, and standards committees.
 
-Global Fire Risk Summary from DC PV Systems
+14.3 Global Fire Risk Summary from DC PV Systems
 
 Estimate global data on fires caused by DC-side faults (arcing, insulation breakdown, connector failure) is limited due to inconsistent reporting. However, credible industry estimates show a clear and rising safety risk:
 
@@ -438,7 +430,7 @@ UK Fire Statistics 2024
 42 solar-related fires in 2023 mostly DC side
 Estimated 0.1 fires per day
 
-Consolidated Estimate: 2 to 4 preventable DC-side fires occur daily worldwide.
+Consolidated Estimate: 2 to 4 preventable DC side fires occur daily worldwide.
 This is likely underestimated due to underreporting!
 
 Root Causes of DC Fires (industry averages)
@@ -465,7 +457,7 @@ Primary Sources
 	•	Australia Clean Energy Council: DC Arc Fault Field Study (2024)
 	•	UK Home Office Fire Statistics (2024)
 
-Recommendation
+14.4 Recommendation
 Use this evidence to support urgent updates to IEC 62548, UL 1699B, NEC 690.11, and rapid shutdown standards. Module-level analog protection circuits offer a simple, reliable, and scalable solution to one of the most persistent risks in global PV deployment.
 
 Freedom to Operate Statement (Engineering-Level, Non-Legal)
@@ -486,7 +478,7 @@ Any overlap with preexisting commercial systems—if asserted—will be consider
 
 We assert the right to publish, share, manufacture, and refine this design under the terms of the CERN OHL-S license, and welcome collaborative engagement from all sectors—including industry, research, and standards bodies.
 
-Disclaimer 
+16 Disclaimer 
 
 The author makes no warranty, express or implied, regarding safety, fitness for purpose, or compliance with local electrical regulations. Field use requires insulation coordination, surge and arc destruction testing, and environmental validation in accordance with applicable standards (e.g. IEC 62548, IEC 61730, UL 1699B).
 
@@ -494,8 +486,7 @@ Misuse or modification of this design without testing may result in serious fail
 
 ⚠️ This is a safety critical design. Use only under the direction of a Chartered Electronics Engineer or equivalent professional.
 
-
-Meaningful contributors
+17 Meaningful contributors
 
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis, Mr. Joern Hackbarth, 
 
@@ -503,7 +494,7 @@ AI Technical Assistance
 ChatGPT (OpenAI) was used for deep comparative searches, structural clarity and logic refinement. Confirmed: No commercially available PV module currently ships with embedded analog arc or insulation protection. This remains an unmet and urgent industry need.
 
 
-AI Ethics Authorship Integrity and Grid Alignment Statement
+18 AI Ethics Authorship Integrity and Grid Alignment Statement
 
 This open hardware disclosure is the result of 13 years of direct solar field experience through VENTUS Ltd and over 20 years of cable and component system knowledge spanning roles at Cable and Wireless, Lapp, Leoni and client engagements with Studer Cables Switzerland. These insights form the technical and application specific foundation of the design shaped by field level failures electrical constraints and persistent safety challenges observed in real world photovoltaic systems.
 
@@ -519,14 +510,7 @@ This open hardware release is intended to:
 	•	Guide prototype development
 	•	Initiate field level destructive testing in lightning and short circuit simulation environments
 
-⚠️ Capacitance and Inductance modeling of complete PV Array 
-
-The engineering models must pay close attention to inductive and capacitative discharge behavious of dense string designs for example 24 strings in Sungrow 350kW string inverters or 20x4 = 80 strings in 1.1MW central inverter topologies. The system may behave as massive capacitor. Induced switching or transients or reverse current faults continue to manifest as dangeorus and often hiden arcs in the field. This behaviour may often be invisible to the inverter. 
-Twisted or Quad string designs may be considered and have been delivered. 
-
-The mission is to build self healing solar modules that autonomously disconnect under dangerous conditions reducing risks of fire, electrocution, inverter failure or transformer overload and enhancing the safety of photovoltaic systems at every scale.
-
-AI Ethics and Responsible Use Statement
+ AI Ethics and Responsible Use Statement
 
 This disclosure includes input developed using ChatGPT OpenAI under a paid professional subscription £200 per month over. The AI was used strictly as an engineering support tool to assist with:
 	•	Structuring circuit logic
@@ -541,19 +525,27 @@ No content has been generated or claimed as original by AI. All logic and safety
 
 This approach upholds transparency authorship integrity and verifiable engineering input. AI was not used to replace engineering judgement invent topologies or obscure authorship. It was used to support responsible engineering not to simulate it.
 
-Forward Looking System Architecture and Grid Control Impact
-
-While this design remains a fully autonomous analog only safety system, future versions may integrate optional non intrusive software overlays to simulate faults or enable array level disconnection as part of grid responsive behaviour. This would allow safe coordination with inverters batteries and wind systems improving capacity factor and system resilience. It also opens the door for proactive disconnection during overproduction, voltage instability or thermal stress without compromising the reliability of the core analog safety logic.
-
-This approach positions the photovoltaic module as a flexible responsive asset in distributed energy networks enabling grid operators to manage safety and system balance from the source not just at the inverter or substation. ALLOWING meaningul solar panel de-energisation, NOT leaving dangerous live DC cables and wires on inverter shutdown WITHOUT use of external rapid shutdown devices that create high voltage (100V to 1500V, soon 2000V) switching risks and exposed to reverse currents up to 55A potentially. 
-
-Electrical Modelling Requirements and System Competence
+19 Electrical Modelling Requirements and System Competence
 
 This design requires full system electrical modelling that combines electronics and electrical engineering competence with direct current string layout and array topology awareness. This includes:
 	•	Capacitance discharge paths
 	•	Inductive loop behaviour across dense field layouts
 	•	Electromagnetic coupling from up to 160 parallel conductors in systems with 80 strings
 	•	Arc propagation and residual energy conditions in long exposed cable runs
+
+
+⚠️ Capacitance and Inductance modeling of complete PV Array 
+
+The engineering models must pay close attention to inductive and capacitative discharge behavious of dense string designs for example 24 strings in Sungrow 350kW string inverters or 20x4 = 80 strings in 1.1MW central inverter topologies. The system may behave as massive capacitor. Induced switching or transients or reverse current faults continue to manifest as dangeorus and often hiden arcs in the field. This behaviour may often be invisible to the inverter. 
+Twisted or Quad string designs may be considered and have been delivered. 
+
+The mission is to build self healing solar modules that autonomously disconnect under dangerous conditions reducing risks of fire, electrocution, inverter failure or transformer overload and enhancing the safety of photovoltaic systems at every scale.
+
+20 Forward Looking System Architecture and Grid Control Impact
+
+While this design remains a fully autonomous analog only safety system, future versions may integrate optional non intrusive software overlays to simulate faults or enable array level disconnection as part of grid responsive behaviour. This would allow safe coordination with inverters batteries and wind systems improving capacity factor and system resilience. It also opens the door for proactive disconnection during overproduction, voltage instability or thermal stress without compromising the reliability of the core analog safety logic.
+
+This approach positions the photovoltaic module as a flexible responsive asset in distributed energy networks enabling grid operators to manage safety and system balance from the source not just at the inverter or substation. ALLOWING meaningul solar panel de-energisation, NOT leaving dangerous live DC cables and wires on inverter shutdown WITHOUT use of external rapid shutdown devices that create high voltage (100V to 1500V, soon 2000V) switching risks and exposed to reverse currents up to 55A potentially. 
 
 VENTUS Ltd is particularly well suited to this challenge due to its decade long focus on direct current string cable behaviour since 2012 and its active collaboration with Studer Cables Switzerland on EBXL solar cable systems that are already field proven across global gigawatt scale deployments.
 
