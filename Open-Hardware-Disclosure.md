@@ -502,6 +502,73 @@ Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Bae
 AI Technical Assistance
 ChatGPT (OpenAI) was used for deep comparative searches, structural clarity and logic refinement. Confirmed: No commercially available PV module currently ships with embedded analog arc or insulation protection. This remains an unmet and urgent industry need.
 
+
+AI Ethics Authorship Integrity and Grid Alignment Statement
+
+This open hardware disclosure is the result of 13 years of direct solar field experience through VENTUS Ltd and over 20 years of cable and component system knowledge spanning roles at Cable and Wireless, Lapp, Leoni and client engagements with Studer Cables Switzerland. These insights form the technical and application specific foundation of the design shaped by field level failures electrical constraints and persistent safety challenges observed in real world photovoltaic systems.
+
+VENTUS Ltd trading as VENTUS Cables and Connectivity is not new to the field. Since 2012 the company has focused deeply on solar direct current string cable layout and design across the United Kingdom and Europe delivering over 2.5 gigawatt peak of photovoltaic systems and advising on numerous bankable engineering procurement and construction projects. VENTUS benefits from an enduring agency relationship with Studer Cables Switzerland a manufacturer with a 100 gigawatt peak global delivery record who owns their own electron beam accelerator and in-house compound development capability for crosslinked polymer insulation. This partnership enables unmatched technical depth in electron beam crosslinked direct current cables specifically tailored for high voltage utility scale solar applications.
+
+VENTUS has made significant long term investment into application level knowledge of direct current string cables including insulation behaviour, fault energy absorption and inductive layout risks across dense array architectures. This gives the company unique insight into the physical realities of fire propagation backfeed currents and surge exposure within photovoltaic systems which most circuit designers do not encounter directly.
+
+The current circuit design has been developed with the support of mentors, field colleagues and early stage contributors all credited in good faith. AI tools such as ChatGPT OpenAI were used under a paid subscription to assist with logic structuring technical language and comparative searches. All engineering decisions design architecture and deployment strategy remain entirely human originated and field driven.
+
+This open hardware release is intended to:
+	•	Enable funding consideration
+	•	Support electronics and electrical engineering modelling
+	•	Guide prototype development
+	•	Initiate field level destructive testing in lightning and short circuit simulation environments
+
+⚠️ Capacitance and Inductance modeling of complete PV Array 
+
+The engineering models must pay close attention to inductive and capacitative discharge behavious of dense string designs for example 24 strings in Sungrow 350kW string inverters or 20x4 = 80 strings in 1.1MW central inverter topologies. The system may behave as massive capacitor. Induced switching or transients or reverse current faults continue to manifest as dangeorus and often hiden arcs in the field. This behaviour may often be invisible to the inverter. 
+Twisted or Quad string designs may be considered and have been delivered. 
+
+The mission is to build self healing solar modules that autonomously disconnect under dangerous conditions reducing risks of fire, electrocution, inverter failure or transformer overload and enhancing the safety of photovoltaic systems at every scale.
+
+AI Ethics and Responsible Use Statement
+
+This disclosure includes input developed using ChatGPT OpenAI under a paid professional subscription £200 per month over. The AI was used strictly as an engineering support tool to assist with:
+	•	Structuring circuit logic
+	•	Clarifying component behaviour
+	•	Formatting technical explanations
+	•	Comparing international standards
+	•	Error checking given volume of considerations 
+
+All engineering decisions safety logic and circuit architecture remain fully human originated grounded in extensive solar field and cable engineering experience. The AI’s role is comparable to that of a field applications engineer supporting component assessment and language articulation under the full direction of the lead designer.
+
+No content has been generated or claimed as original by AI. All logic and safety pathways have been verified against real system behaviour failure conditions and protection requirements.
+
+This approach upholds transparency authorship integrity and verifiable engineering input. AI was not used to replace engineering judgement invent topologies or obscure authorship. It was used to support responsible engineering not to simulate it.
+
+Forward Looking System Architecture and Grid Control Impact
+
+While this design remains a fully autonomous analog only safety system, future versions may integrate optional non intrusive software overlays to simulate faults or enable array level disconnection as part of grid responsive behaviour. This would allow safe coordination with inverters batteries and wind systems improving capacity factor and system resilience. It also opens the door for proactive disconnection during overproduction, voltage instability or thermal stress without compromising the reliability of the core analog safety logic.
+
+This approach positions the photovoltaic module as a flexible responsive asset in distributed energy networks enabling grid operators to manage safety and system balance from the source not just at the inverter or substation. ALLOWING meaningul solar panel de-energisation, NOT leaving dangerous live DC cables and wires on inverter shutdown WITHOUT use of external rapid shutdown devices that create high voltage (100V to 1500V, soon 2000V) switching risks and exposed to reverse currents up to 55A potentially. 
+
+Electrical Modelling Requirements and System Competence
+
+This design requires full system electrical modelling that combines electronics and electrical engineering competence with direct current string layout and array topology awareness. This includes:
+	•	Capacitance discharge paths
+	•	Inductive loop behaviour across dense field layouts
+	•	Electromagnetic coupling from up to 160 parallel conductors in systems with 80 strings
+	•	Arc propagation and residual energy conditions in long exposed cable runs
+
+VENTUS Ltd is particularly well suited to this challenge due to its decade long focus on direct current string cable behaviour since 2012 and its active collaboration with Studer Cables Switzerland on EBXL solar cable systems that are already field proven across global gigawatt scale deployments.
+
+Stakeholder Invitation
+
+VENTUS Ltd invites evaluation and collaboration from grid authorities utilities and standards bodies including:
+	•	National Grid ESO United Kingdom
+	•	NESO 
+	•	TenneT Netherlands and Germany where VENTUS has delivered 110 kilovolt solar transmission circuits
+	•	TERNA Italy
+	•	UK Power Networks and other UK Grid operators Northern Power Grid, Electricity North West, Scottish Power and SSE
+	•	ENEL Group and its global infrastructure divisions
+
+This open hardware design supports global decarbonisation goals and addresses a critical safety and fire risk gap in current photovoltaic deployment. It is now ready for stakeholder review, electrical simulation and field validation in partnership with public institutions and industry leadership.
+
 Vikram Kumar
 Ventus Ltd
 United Kingdom
