@@ -500,7 +500,7 @@ Meaningful contributors
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis, Mr. Joern Hackbarth, 
 
 AI Technical Assistance
-ChatGPT (OpenAI) was used for deep comparative searches, structural clarity, and logic refinement. Confirmed: No commercially available PV module currently ships with embedded analog arc or insulation protection. This remains an unmet and urgent industry need.
+ChatGPT (OpenAI) was used for deep comparative searches, structural clarity and logic refinement. Confirmed: No commercially available PV module currently ships with embedded analog arc or insulation protection. This remains an unmet and urgent industry need.
 
 Vikram Kumar
 Ventus Ltd
