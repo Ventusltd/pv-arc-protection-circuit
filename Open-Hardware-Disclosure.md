@@ -14,31 +14,31 @@ License URL: https://ohwr.org/cern_ohl_s_v2.txt
 
 1. Purpose
 
-This open hardware design provides embedded, MCU-free protection against DC arc faults, insulation leakage, and cable or connector failures within photovoltaic (PV) modules. It is intended to achieve nuclear-grade resilience through analog-only fault logic that functions even in high-radiation, EMI-heavy, or railway environments. 
+This open hardware design provides embedded, MCU free protection against DC arc faults, insulation leakage, and cable or connector failures within photovoltaic (PV) modules. It is intended to achieve nuclear-grade resilience through analog only fault logic that functions even in high radiation, EMI-heavy or railway environments. 
 
 The system is specifically designed to prevent rooftop fires, vegetation ignition, and wildfires caused by undetected DC arcs in solar installations. Disconnection is gated by sunlight presence inferred from PV voltage and confirmed current flow, preventing false alarms without optical sensors or software.
 
-It enables sub-microsecond autonomous disconnection at module level to mitigate fire, electrocution, and backfeed risks in real-world solar deployments.
+It enables sub microsecond autonomous disconnection at module level to mitigate fire, electrocution and backfeed risks in real world solar deployments.
 
-This PCB is designed to go inside the module’s junction box and function as a module-level protection element — enabling system-wide fire and fault risk reduction whether the site is 10 kW or 1000 MWp.
+This PCB is designed to go inside the module’s junction box and function as a module level protection element, enabling system wide fire and fault risk reduction whether the site is 10 kW or 1000 MWp.
 
-Designed with high-noise, high-security, and high-voltage environments in mind, and intended to scale with modules across utility systems. It also serves domestic and commercial sectors with ease, offering high reliability and straightforward replacement of modules or components in the  event of failure.
+Designed with high noise, high security, and high-voltage environments in mind, and intended to scale with modules across utility systems. It also serves domestic and commercial sectors with ease, offering high reliability and straightforward replacement of modules or components in the  event of failure.
 
-We envision solar modules that protect themselves, disconnect in microseconds, and rejoin the system without human intervention — once it’s safe to do so.
+We envision solar modules that protect themselves, disconnect in microseconds, and rejoin the system without human intervention, once it’s safe to do so.
 No software, no reboot, no delay.
 
 ⸻
 
 2. Problem Statement
 
-Existing PV protection relies on string-level detection or external rapid shutdown devices. These approaches often fail to prevent:
+Existing PV protection relies on string level detection or external rapid shutdown devices. These approaches often fail to prevent:
 	•	Insulation breakdown to frame or ground
 	•	Arc faults in connectors or junction boxes
 	•	Sustained voltage after cable breaks
 	•	Backfeed currents up to 40 A from paralleled strings
 	•	Unsafe voltage presence during maintenance or emergencies
 
-Standard fuses and AFCIs often miss low-current faults or trip too late. Battery cells are already protected individually. Solar modules must follow suit.
+Standard fuses and AFCIs often miss low current faults or trip too late. Battery cells are already protected individually. Solar modules must follow suit.
 
 ⸻
 
@@ -492,12 +492,14 @@ The author makes no warranty, express or implied, regarding safety, fitness for 
 
 Misuse or modification of this design without testing may result in serious failure or fire. Use at your own risk.
 
-⚠️ This is a safety-critical design. Use only under the direction of a Chartered Electronics Engineer or equivalent professional.
+⚠️ This is a safety critical design. Use only under the direction of a Chartered Electronics Engineer or equivalent professional.
 
 
 Meaningful contributors
 
-Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis, Mr. Joern Hackbarth
+Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis, Mr. Joern Hackbarth, 
+
+ChatGP AI Deep Searches (confirmed no equivalent  exists, currently no modules ship protection embedded, this is an urgent development need). 
 
 Vikram Kumar
 Ventus Ltd
