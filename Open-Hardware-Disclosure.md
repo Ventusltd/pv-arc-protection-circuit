@@ -27,6 +27,8 @@ Designed with high noise, high security, and high-voltage environments in mind, 
 We envision solar modules that protect themselves, disconnect in microseconds, and rejoin the system without human intervention, once it’s safe to do so.
 No software, no reboot, no delay.
 
+Just by reading tnis release the user will obtain critical safety and PV Array design insights.
+
 ⸻
 
 2. Problem Statement
@@ -546,7 +548,7 @@ The mission is to build self healing solar modules that autonomously disconnect 
 19.2 Thermal and Integration Considerations
 
 	•	The circuit does not involve switching losses under normal operation, but the main MOSFETs conduct continuously during daylight hours.
-	•	Thermal dissipation of approximately 4 to 6 watts per MOSFET must be modelled under typical PV string currents (10–13 A), with higher loads possible during backfeed events.
+	•	Thermal dissipation per MOSFET must be modelled under typical PV string currents (10–13 A), with higher loads possible during backfeed events.
 	•	Existing tinned copper busbars inside the junction box may serve as primary thermal sinks.
 	•	MOSFETs should be thermally bonded to these conductors using isolated thermal pads or coupled via PCB copper planes, ensuring proper electrical insulation.
 	•	Ambient temperatures inside sealed junction boxes may exceed 70 degrees Celsius in high-irradiance or rooftop installations, requiring accurate thermal simulation.
