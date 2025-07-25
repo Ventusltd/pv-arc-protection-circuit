@@ -535,12 +535,27 @@ This design requires full system electrical modelling that combines electronics 
 	•	Arc propagation and residual energy conditions in long exposed cable runs
 
 
-⚠️ Capacitance and Inductance modeling of complete PV Array 
+19.1 Capacitance and Inductance modeling of complete PV Array 
 
 The engineering models must pay close attention to inductive and capacitative discharge behavious of dense string designs for example 24 strings in Sungrow 350kW string inverters or 20x4 = 80 strings in 1.1MW central inverter topologies. The system may behave as massive capacitor. Induced switching or transients or reverse current faults continue to manifest as dangeorus and often hiden arcs in the field. This behaviour may often be invisible to the inverter. 
 Twisted or Quad string designs may be considered and have been delivered. 
 
 The mission is to build self healing solar modules that autonomously disconnect under dangerous conditions reducing risks of fire, electrocution, inverter failure or transformer overload and enhancing the safety of photovoltaic systems at every scale.
+
+
+19.2 Thermal and Integration Considerations
+
+	•	The circuit does not involve switching losses under normal operation, but the main MOSFETs conduct continuously during daylight hours.
+	•	Thermal dissipation of approximately 4 to 6 watts per MOSFET must be modelled under typical PV string currents (10–13 A), with higher loads possible during backfeed events.
+	•	Existing tinned copper busbars inside the junction box may serve as primary thermal sinks.
+	•	MOSFETs should be thermally bonded to these conductors using isolated thermal pads or coupled via PCB copper planes, ensuring proper electrical insulation.
+	•	Ambient temperatures inside sealed junction boxes may exceed 70 degrees Celsius in high-irradiance or rooftop installations, requiring accurate thermal simulation.
+	•	The entire PCB, including MOSFET thermal paths and copper geometries, must be modelled in collaboration with the junction box manufacturer or tooling supplier.
+	•	All layout decisions must respect Class II insulation requirements for high-voltage DC, including appropriate creepage and clearance between conductors, copper planes, and enclosure features.
+	•	Any use of the module frame as a thermal path must preserve dielectric separation and meet IEC 61730 requirements for long-term material integrity.
+	•	This protection circuit must not be treated as a stand-alone safety component. It requires joint integration between the junction box supplier on the hardware side and the client-side power systems engineer or PV integrator on the deployment side.
+	•	Proper system-level modelling is essential to ensure coordination with PV array architecture, inverter protection logic, insulation behaviour, and overall fault handling performance
+
 
 20 Forward Looking System Architecture and Grid Control Impact
 
