@@ -27,7 +27,7 @@ Designed with high noise, high security, and high-voltage environments in mind, 
 We envision solar modules that protect themselves, disconnect in microseconds, and rejoin the system without human intervention, once it’s safe to do so.
 No software, no reboot, no delay.
 
-Just by reading tnis release the user will obtain critical safety and PV Array design insights.
+Just by reading this release the user will obtain critical safety and PV Array design insights.
 
 ⸻
 
