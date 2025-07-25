@@ -53,7 +53,7 @@ Dual 1700 V SiC MOSFETs in series for 2–3 kV withstand, <1 µs disconnec
 Arc fault detected through shunt + RC filter (30–100 kHz ripple), insulation leakage via 10 MΩ divider to frame, both feeding a diode OR comparator trigger.
 Gate pull down by PNP transistor, protected with 18 V MOV clamp; surge absorbed via TVS + snubber (2.2–4.7 µF + 100 Ω).
 Entire system self energised via PV voltage (>15 V = sun logic gate).
-PCB fits 35 × 45 mm, <10 mm height, ~20 SMD components, designed for Stäubli/Amphenol j boxes at up to 40 A continuous, 1500–2000 VDC.
+PCB fits 35 × 45 mm, <10 mm height, ~20 SMD components, designed for Stäubli/Amphenol j boxes at up to 17–20 A continuous, with 30–55 A backfeed possible in parallel string faults, 1500–2000 VDC and according to OEM datasheets! 
 
 The proposed circuit integrates within the module junction box and includes:
 	•	High speed N MOSFET disconnection (<1 µs)
@@ -191,6 +191,7 @@ R2: 10 MΩ, R3: 100 kΩ, both 0.5 W rated, 1% tolerance
 	12.	Diode OR (for comparator outputs)
 1N4148 (x2), fast switching diodes, 75 V, SOD 123 or DO 35
 
+Confirm that selected MOSFETs, snubber capacitor, and TVS/MOV components are suitable for 30 A RMS-rated current paths and peak surge currents 55 A. If not, propose candidate upgrades. Note during to changing module technology, backfeed, short circuit currents, bifaciality must be observed with care. 
 
 Iteration 3 Summary (to compare with ealier concept)
 	•	Q1 and Q1B are now explicitly shown in series for 2 kV withstand.
@@ -547,16 +548,16 @@ The mission is to build self healing solar modules that autonomously disconnect 
 
 19.2 Thermal and Integration Considerations
 
-•	The circuit does not involve switching losses under normal operation, but the main MOSFETs conduct continuously during daylight hours.
-•	Thermal dissipation per MOSFET must be modelled under typical PV string currents (10–13 A), with higher loads possible during backfeed events.
-•	Existing tinned copper busbars inside the junction box may serve as primary thermal sinks.
-•	MOSFETs should be thermally bonded to these conductors using isolated thermal pads or coupled via PCB copper planes, ensuring proper electrical insulation.
-•	Ambient temperatures inside sealed junction boxes may exceed 70 degrees Celsius in high irradiance or rooftop installations, requiring accurate thermal simulation.
-•	The entire PCB, including MOSFET thermal paths and copper geometries, must be modelled in collaboration with the junction box manufacturer or tooling supplier.
-•	All layout decisions must respect Class II insulation requirements for high voltage DC, including appropriate creepage and clearance between conductors, copper planes and enclosure features.
-•	Any use of the module frame as a thermal path must preserve dielectric separation and meet IEC 61730 requirements for long term material integrity.
-•	This protection circuit must not be treated as a stand alone safety component. It requires joint integration between the junction box supplier on the hardware side and the client side power systems engineer or PV integrator on the deployment side.
-•	Proper system level modelling is essential to ensure coordination with PV array architecture, inverter protection logic, insulation behaviour and overall fault handling performance
+• The circuit does not involve switching losses under normal operation, but the main MOSFETs conduct continuously during daylight hours.
+• Thermal dissipation per MOSFET must be modelled under typical PV string currents, with higher loads possible during backfeed events. Continuous conduction currents may reach 20–25 A in modern 550–660 Wp module strings, and that thermal dissipation and copper
+• Existing tinned copper busbars inside the junction box may serve as primary thermal sinks.
+• MOSFETs should be thermally bonded to these conductors using isolated thermal pads or coupled via PCB copper planes, ensuring proper electrical insulation.
+• Ambient temperatures inside sealed junction boxes may exceed 70 degrees Celsius in high irradiance or rooftop installations, requiring accurate thermal simulation.
+• The entire PCB, including MOSFET thermal paths and copper geometries, must be modelled in collaboration with the junction box manufacturer or tooling supplier.
+• All layout decisions must respect Class II insulation requirements for high voltage DC, including appropriate creepage and clearance between conductors, copper planes and enclosure features.
+• Any use of the module frame as a thermal path must preserve dielectric separation and meet IEC 61730 requirements for long term material integrity.
+• This protection circuit must not be treated as a stand alone safety component. It requires joint integration between the junction box supplier on the hardware side and the client side power systems engineer or PV integrator on the deployment side.
+• Proper system level modelling is essential to ensure coordination with PV array architecture, inverter protection logic, insulation behaviour and overall fault handling performance
 
 
 20 Forward Looking System Architecture and Grid Control Impact
