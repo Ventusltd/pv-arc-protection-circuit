@@ -494,6 +494,11 @@ Misuse or modification of this design without testing may result in serious fail
 
 Dr. Giedrius Kopitkovas (especially suggesting MOSFETs vs fuses), Mr. Oliver Baer, Mr. Jan Mastny, Mr. Faruk Yeginsoy, Mr. Wolfgang Kessler, Mr. Christoph Studer, Mr.Stefan Otto (introducing me to Studer Cables Switzerland and original DC knowledge), Mr. Steve Cooper, Mr. Steven Mcfadyen, Mr. Liam Hicks, Mr. Dathan Eldridge, Ms. Anjali Kumar (early logic checking), Mr. Marc Scambler, Mr. Matthew Xenakis, Mr. Joern Hackbarth, Mr. Jason Daniels
 
+Media Coverage
+
+Our work on PV module-level DC arc suppression was featured in Forbes:
+[DC Cable: The Overlooked Risk Of The $2 Trillion Solar Sector](https://www.forbes.com/councils/forbestechcouncil/2025/07/24/dc-cable-the-overlooked-risk-of-the-2-trillion-solar-sector/) (Forbes Tech Council, July 2025))
+
 AI Technical Assistance
 ChatGPT (OpenAI) was used for deep comparative searches, structural clarity and logic refinement. Confirmed: No commercially available PV module currently ships with embedded analog arc or insulation protection. This remains an unmet and urgent industry need.
 
