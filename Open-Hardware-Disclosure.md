@@ -37,7 +37,7 @@ Existing PV protection relies on string level detection or external rapid shutdo
 	•	Insulation breakdown to frame or ground
 	•	Arc faults in connectors or junction boxes
 	•	Sustained voltage after cable breaks
-	•	Backfeed currents up to 40 A from paralleled strings (backfeed may be worse in some home run designs with insulation piercing connectors, which may reduce MPPT protection, it may not be abovr the fuse current snd it may cause massive DC leakage beyond what is normal leakage current i.e. in Amps not milliamps!)
+	•	Backfeed currents up to 40 A from paralleled strings (backfeed may be worse in some home run designs with insulation piercing connectors, which may reduce MPPT protection, it may not be above the fuse current and it may cause massive DC leakage beyond what is normal leakage current i.e. in amps not milliamps!)
 	•	Unsafe voltage presence during maintenance or emergencies
 
 Standard fuses and AFCIs often miss low current faults or trip too late. Battery cells are already protected individually. Solar modules must follow suit.
@@ -46,7 +46,7 @@ Standard fuses and AFCIs often miss low current faults or trip too late. Battery
 
 3. Solution Overview
 
-Exeutive summary based on iteration 3
+Executive summary based on iteration 3
 NOTE: MOSFET snd exisging diode heat dissipation against tinned copper bus bars or similar must be modelled at detailed design stage.
 
 Dual 1700 V SiC MOSFETs in series for 2–3 kV withstand, <1 µs disconnection via analog comparator logic   no MCU, no reboot, no comms.
