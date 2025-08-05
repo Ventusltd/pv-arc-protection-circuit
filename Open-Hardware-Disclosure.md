@@ -47,13 +47,13 @@ Standard fuses and AFCIs often miss low current faults or trip too late. Battery
 3. Solution Overview
 
 Executive summary based on iteration 3
-NOTE: MOSFET snd exisging diode heat dissipation against tinned copper bus bars or similar must be modelled at detailed design stage.
+NOTE: MOSFET snd existing diode heat dissipation against tinned copper bus bars or similar must be modelled at detailed design stage.
 
-Dual 1700 V SiC MOSFETs in series for 2–3 kV withstand, <1 µs disconnection via analog comparator logic   no MCU, no reboot, no comms.
+Dual 1700 V SiC MOSFETs in series for 2–3 kV withstand, <1 µs disconnection via analog comparator logic no MCU, no reboot, no comms.
 Arc fault detected through shunt + RC filter (30–100 kHz ripple), insulation leakage via 10 MΩ divider to frame, both feeding a diode OR comparator trigger.
 Gate pull down by PNP transistor, protected with 18 V MOV clamp; surge absorbed via TVS + snubber (2.2–4.7 µF + 100 Ω).
 Entire system self energised via PV voltage (>15 V = sun logic gate).
-PCB fits 35 × 45 mm, <10 mm height, ~20 SMD components, designed for Stäubli/Amphenol j boxes at up to 17–20 A continuous, with 30–55 A backfeed possible in parallel string faults, 1500–2000 VDC and according to OEM datasheets! 
+PCB fits 35 × 45 mm, <10 mm height, appdox 20 surface mounted devices (SMD) components on the miniture PCB, designed for Stäubli/Amphenol or alternative module attached junction boxes at up to 17–20 A continuous, with 30–55 A backfeed possible in parallel string faults, 1500–2000 VDC and according to OEM datasheets. Critically avoiding doubling of MC4 or alternative connectors and placed ideally before the blocking diodes!
 
 The proposed circuit integrates within the module junction box and includes:
 	•	High speed N MOSFET disconnection (<1 µs)
