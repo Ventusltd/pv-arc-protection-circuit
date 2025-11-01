@@ -10,7 +10,29 @@ Author: Vikram (Ventus Ltd)
 Date: 2025 05 29
 License URL: https://ohwr.org/cern_ohl_s_v2.txt
 
- 
+Preface
+
+Solar DC fires, corrosion, and electric shock incidents are increasing globally. These events occur because, under current standards and technology, it remains impossible to fully isolate DC voltage at the solar panel level. As soon as sunlight is present, the array remains energised regardless of shutdown commands or inverter disconnection.
+
+Module Level Power Electronics offer improved shutdown performance, yet residual voltage, connector degradation, and internal arcing continue to occur in real installations. The inability to achieve true source-level isolation remains the fundamental limitation preventing complete DC safety in solar systems.
+
+This repository documents an open-source, hardware-based approach for autonomous arc suppression and insulation fault disconnection within each module. It is published under the CERN OHL-S v2 licence for research and educational use only. Verification, certification, and implementation remain the responsibility of the user.
+
+The intent is to advance industry understanding of how DC faults behave and how they can be safely contained at their origin. Even if module-level disconnection PCBs in solar panels lag behind the safety performance of battery management systems (which already isolate at all levels above 50 V DC), this work defines the DC dangers that are unique to solar on a global scale.
+
+⸻
+
+DC Electricity Dangers
+	1.	Fundamental Differences between DC and AC — DC faults persist because there is no natural zero crossing; current and arcs can continue indefinitely under fault or switching conditions.
+	2.	DC Leakage and Corrosion Risk — Undetected leakage corrodes earthing systems, steel structures, and rebar, undermining both electrical and structural safety.
+	3.	Energised Frames and Exposed Metal Parts — PV modules, racks, and metallic enclosures can become live under insulation failure, posing invisible fire and shock hazards.
+	4.	Surge Protection and Thermal Behaviour — Poor SPD coordination, incorrect cable sizing, or reverse current paths can cause overheating, thermal runaway, or equipment damage.
+	5.	Grounding and Insulation Monitoring — Floating DC systems require continuous insulation monitoring and fusing on both poles, verified against BS 7671 and IEC 62548.
+	6.	AC and DC Interaction — Transformerless inverters and bidirectional converters can allow DC fault energy to migrate into AC networks; full harmonic and back-feed studies are essential.
+	7.	Real-World Leakage Behaviour — Field data shows leakage currents in amperes, not milliamperes; only live-site testing and competent engineering oversight ensure safety.
+	8.	Restoring Design Integrity — Financial shortcuts must never override engineering evidence; when integrity is lost, incidents follow.
+	9.	Overvoltages During Cold Start — Low-temperature conditions can raise open-circuit voltage beyond rated limits, stressing insulation and damaging inverters; SPD coordination is critical.
+	10.	Design Documentation and Single-Line Diagrams — An SLD is a legal and technical record of system safety; if protection studies and earthing logic are missing, safe energisation cannot be proven
 
 1. Purpose
 
@@ -20,7 +42,7 @@ The system is specifically designed to prevent rooftop fires, vegetation ignitio
 
 It enables sub microsecond autonomous disconnection at module level to mitigate fire, electrocution and backfeed risks in real world solar deployments.
 
-This PCB is designed to go inside the module’s junction box and function as a module level protection element, enabling system wide fire and fault risk reduction whether the site is 10 kW or 1000 MWp.
+This PCB is designed to go inside the module’s junction box and function as a module level protection element, enabling system wide fire and fault risk reduction whether the site is 1 kW or 1000 MWp.
 
 Designed with high noise, high security and high voltage environments in mind and intended to scale with modules across utility systems. It also serves domestic and commercial sectors with ease, offering high reliability and straightforward replacement of modules or components in the  event of failure.
 
