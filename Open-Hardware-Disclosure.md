@@ -12,7 +12,7 @@ License URL: https://ohwr.org/cern_ohl_s_v2.txt
 
 Preface
 
-Solar DC fires, corrosion, and electric shock incidents are increasing globally. These events occur because, under current standards and technology, it remains impossible to fully isolate DC voltage at the solar panel level. As soon as sunlight is present, the array remains energised regardless of shutdown commands or inverter disconnection.
+Solar DC fires, corrosion, and electric shock incidents are increasing globally. These events occur because under current standards and technology, it remains impossible to fully isolate DC voltage at the solar panel level. As soon as sunlight is present, the array remains energised regardless of shutdown commands or inverter disconnection.
 
 Module Level Power Electronics offer improved shutdown performance, yet residual voltage, connector degradation, and internal arcing continue to occur in real installations. The inability to achieve true source-level isolation remains the fundamental limitation preventing complete DC safety in solar systems.
 
